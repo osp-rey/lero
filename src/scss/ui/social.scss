@@ -1,0 +1,44 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.social {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+
+  .social-item {
+    --border: white;
+    --color: white;
+    --background: transparent;
+    --border-h: var(--primary);
+    --color-h: var(--primary);
+    --background-h: transparent;
+
+    @include flex-center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border);
+    background-color: var(--background);
+    flex-shrink: 0;
+
+    color: var(--color);
+    font-size: 17px;
+
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease;
+
+    @include hover {
+      background-color: var(--background-h);
+      border-color: var(--border-h);
+      color: var(--color-h);
+    }
+
+    &._adapt {
+      @media (min-width: 1026px) {
+        display: none !important;
+      }
+    }
+  }
+}

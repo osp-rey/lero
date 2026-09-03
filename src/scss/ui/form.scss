@@ -1,0 +1,100 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.form-control {
+  width: 100%;
+}
+
+.input {
+  --border: rgba(0, 0, 0, 0.6);
+  --background: white;
+  --color: black;
+  --border-f: var(--primary);
+  --background-f: white;
+  --color-f: black;
+
+  border: 1px solid var(--border);
+  outline: none;
+  padding: 17px 40px;
+  background-color: var(--background);
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--color);
+  font-size: 16px;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+
+  @include tablet {
+    padding: 14px 30px;
+  }
+
+  &:focus {
+    border-color: var(--border-f);
+    background-color: var(--background-f);
+    color: var(--color-f);
+  }
+  &::placeholder {
+    color: inherit;
+    opacity: 0.6;
+  }
+}
+
+.check-wrapper {
+  position: relative;
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+  }
+  .wpcf7-list-item {
+    margin-left: 0 !important;
+  }
+  .wpcf7-list-item-label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    width: fit-content;
+
+    font-size: 13px;
+    line-height: 100%;
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+
+      transition: color .3s ease;
+      @include hover {
+        text-decoration: none;
+        color: var(--primary);
+      }
+    }
+
+    &::before {
+      --border: rgba(0, 0, 0, 0.1);
+      --background: white;
+      --border-a: black;
+      --background-a: white;
+
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 25px;
+      height: 25px;
+      border: 1px solid var(--border);
+      background-color: var(--background);
+
+      transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+    }
+  }
+}
