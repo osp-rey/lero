@@ -1,15 +1,19 @@
 import burger from "./functions/burger.js";
+import buttonsNote from "./functions/buttonsNote.js";
 import heroScroll from "./functions/heroScroll.js";
 import inputmask from "./functions/inputmask.min.js";
+import more from "./functions/more.js";
 import scrollVideo from "./functions/scrollVideo.js";
-import scrollWrap from "./functions/scrollWrap.js";
+import sliders from "./functions/sliders.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   burger();
   inputmask();
   scrollVideo();
   heroScroll();
-  scrollWrap();
+  buttonsNote();
+  more();
+  sliders();
 
   Fancybox.bind("[data-fancybox]", {
     closeButton: false,

@@ -1,6 +1,5 @@
 export default function heroScroll() {
   const hero = document.querySelector(".s-hero");
-  const production = document.querySelector(".s-production");
   if (hero) {
     const frameStart = hero.querySelector("#hero-frame-start");
     const logo = hero.querySelector(".s-hero__frame-logo");
@@ -57,9 +56,9 @@ export default function heroScroll() {
       },
     });
 
-    gsap.set(frameSecond, { opacity: 0 });
-    gsap.set(content, { opacity: 0, x: -100 });
-    gsap.set(btn, { opacity: 0, y: 50 });
+    // gsap.set(frameSecond, { opacity: 0 });
+    // gsap.set(content, { opacity: 0, x: -100 });
+    // gsap.set(btn, { opacity: 0, y: 50 });
 
     gsap.to(frameSecond, {
       opacity: 1,

@@ -8,7 +8,7 @@
 .body {
   font-family: "Evolventa", sans-serif;
   font-size: 16px;
-  // background-color: var(--dark);
+  background-color: var(--dark);
   color: white;
 
   @include laptop-min {

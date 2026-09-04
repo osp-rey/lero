@@ -3,9 +3,8 @@
 
 .s-hero {
   position: relative;
-  min-height: 500vh;
+  min-height: 400vh;
   z-index: 1;
-  margin-bottom: 100vh;
 
   @include tablet {
     min-height: 300vh;
@@ -24,7 +23,7 @@
   }
   &__gallery-inside {
     position: relative;
-    min-height: 500vh;
+    min-height: 400vh;
     width: 100%;
     z-index: 1;
 
