@@ -1207,6 +1207,14 @@ img {
     right: 12px;
   }
 
+  .s-hero {
+    padding-bottom: 300px;
+  }
+
+  .s-hero__gallery-inside {
+    padding-bottom: 300px;
+  }
+
   .s-hero__frame-text {
     font-size: 22px;
   }
