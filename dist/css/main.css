@@ -1163,11 +1163,11 @@ img {
   }
 
   .s-hero {
-    min-height: 300vh;
+    min-height: 200vh;
   }
 
   .s-hero__gallery-inside {
-    min-height: 300vh;
+    min-height: 200vh;
   }
 
   .s-hero__frame {
