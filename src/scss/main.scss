@@ -13,11 +13,14 @@
 @use "./ui/tab";
 @use "./ui/social";
 @use "./ui/form";
+@use "./ui/sect";
+@use "./ui/scroll-wrap";
 
 @use "./components/header";
 @use "./components/burger";
 @use "./components/modal";
 
 @use "./components/s-hero";
+@use "./components/s-production";
 
 @use "./components/footer";

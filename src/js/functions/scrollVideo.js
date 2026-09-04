@@ -5,7 +5,6 @@ export default function scrollVideo() {
     new ScrollyVideo({
       scrollyVideoContainer: "hero-video",
       src: heroVideo.dataset.src,
-      sticky: false,
     });
   }
 }

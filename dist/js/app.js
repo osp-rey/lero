@@ -57,6 +57,7 @@
     }
     function heroScroll() {
         const hero = document.querySelector(".s-hero");
+        const production = document.querySelector(".s-production");
         if (hero) {
             const frameStart = hero.querySelector("#hero-frame-start");
             const logo = hero.querySelector(".s-hero__frame-logo");
@@ -65,6 +66,7 @@
             const frameSecond = hero.querySelector("#hero-frame-second");
             const content = hero.querySelector(".s-hero__frame-content");
             const btn = hero.querySelector(".s-hero__frame-btn");
+            const endOption = "+=100vh";
             gsap.to(frameStart, {
                 opacity: 0,
                 ease: "power1.inOut",
@@ -108,13 +110,24 @@
                     scrub: 1
                 }
             });
+            gsap.set(frameSecond, {
+                opacity: 0
+            });
+            gsap.set(content, {
+                opacity: 0,
+                x: -100
+            });
+            gsap.set(btn, {
+                opacity: 0,
+                y: 50
+            });
             gsap.to(frameSecond, {
                 opacity: 1,
                 ease: "power1.inOut",
                 scrollTrigger: {
                     trigger: hero,
                     start: "center center",
-                    end: "bottom bottom",
+                    end: endOption,
                     scrub: 1
                 }
             });
@@ -125,7 +138,7 @@
                 scrollTrigger: {
                     trigger: hero,
                     start: "center center",
-                    end: "bottom bottom",
+                    end: endOption,
                     scrub: 1
                 }
             });
@@ -136,7 +149,7 @@
                 scrollTrigger: {
                     trigger: hero,
                     start: "center center",
-                    end: "bottom bottom",
+                    end: endOption,
                     scrub: 1
                 }
             });
@@ -155,9 +168,19 @@
         if (heroVideo) {
             new ScrollyVideo({
                 scrollyVideoContainer: "hero-video",
-                src: heroVideo.dataset.src,
-                sticky: false
+                src: heroVideo.dataset.src
             });
+        }
+    }
+    function scrollWrap() {
+        const wrap = document.querySelector(".scroll-wrap");
+        if (wrap) {
+            const items = wrap.querySelectorAll(".scroll-wrap-item");
+            if (items.length) {
+                items.forEach((item, index) => {
+                    item.style.zIndex = index + 1;
+                });
+            }
         }
     }
     document.addEventListener("DOMContentLoaded", () => {
@@ -165,6 +188,7 @@
         inputmask();
         scrollVideo();
         heroScroll();
+        scrollWrap();
         Fancybox.bind("[data-fancybox]", {
             closeButton: false,
             on: {
