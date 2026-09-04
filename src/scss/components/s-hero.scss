@@ -89,6 +89,7 @@
   }
   &__frame-logo {
     display: block;
+    align-self: center;
     width: 385px;
     @include laptop {
       width: 300px;
