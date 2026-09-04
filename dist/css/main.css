@@ -619,11 +619,6 @@ img {
   margin: 75px 0px;
 }
 
-.scroll-wrap-item {
-  position: sticky;
-  top: 0;
-}
-
 .header {
   position: fixed;
   left: 0;
@@ -1163,11 +1158,11 @@ img {
   }
 
   .s-hero {
-    min-height: 200vh;
+    min-height: 300vh;
   }
 
   .s-hero__gallery-inside {
-    min-height: 200vh;
+    min-height: 300vh;
   }
 
   .s-hero__frame {
@@ -1208,11 +1203,11 @@ img {
   }
 
   .s-hero {
-    padding-bottom: 300px;
+    min-height: 200vh;
   }
 
   .s-hero__gallery-inside {
-    padding-bottom: 300px;
+    min-height: 200vh;
   }
 
   .s-hero__frame-text {

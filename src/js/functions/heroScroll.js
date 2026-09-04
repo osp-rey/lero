@@ -13,8 +13,6 @@ export default function heroScroll() {
     const content = hero.querySelector(".s-hero__frame-content");
     const btn = hero.querySelector(".s-hero__frame-btn");
 
-    const endOption = "center center+=50vh";
-
     gsap.to(frameStart, {
       opacity: 0,
       ease: "power1.inOut",
@@ -69,7 +67,7 @@ export default function heroScroll() {
       scrollTrigger: {
         trigger: hero,
         start: "center center",
-        end: endOption,
+        end: "bottom bottom",
         scrub: 1,
       },
     });
@@ -81,7 +79,7 @@ export default function heroScroll() {
       scrollTrigger: {
         trigger: hero,
         start: "center center",
-        end: endOption,
+        end: "bottom bottom",
         scrub: 1,
       },
     });
@@ -93,7 +91,7 @@ export default function heroScroll() {
       scrollTrigger: {
         trigger: hero,
         start: "center center",
-        end: endOption,
+        end: "bottom bottom",
         scrub: 1,
       },
     });

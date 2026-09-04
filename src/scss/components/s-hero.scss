@@ -8,10 +8,10 @@
   margin-bottom: 100vh;
 
   @include tablet {
-    min-height: 200vh;
+    min-height: 300vh;
   }
   @include tablet-min {
-    padding-bottom: 300px;
+    min-height: 200vh;
   }
 
   &__gallery {
@@ -29,10 +29,10 @@
     z-index: 1;
 
     @include tablet {
-      min-height: 200vh;
+      min-height: 300vh;
     }
     @include tablet-min {
-      padding-bottom: 300px;
+      min-height: 200vh;
     }
 
     &::before,
