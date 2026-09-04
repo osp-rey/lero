@@ -26,10 +26,10 @@
   }
 
   &__scroll-video {
-    position: sticky; // Меняем absolute на sticky
-    top: 0; // Прилипаем к верху
+    position: sticky;
+    top: 0;
     width: 100%;
-    height: 100vh; // На весь экран
+    height: 100vh;
     overflow: hidden;
     z-index: -3;
   }
@@ -37,11 +37,28 @@
   &__frame {
     @include flex-center;
     position: fixed;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: 10;
+    padding: 150px 0px 55px 0px;
+
+    &._bottom {
+      align-items: flex-end;
+    }
+
+    @include laptop-middle {
+      padding-bottom: 40px;
+    }
+    @include tablet {
+      padding-top: 100px;
+    }
+
+    &._second {
+      opacity: 0;
+    }
   }
   &__frame-center {
     @include flex-center;
@@ -50,20 +67,131 @@
     display: flex;
     gap: 50px;
 
+    @include laptop-middle {
+      gap: 30px;
+    }
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      text-align: center;
+    }
+
     .separator {
       width: 5px;
       height: auto;
       border-radius: 3px;
       background-color: currentColor;
+      @include tablet {
+        display: none;
+      }
     }
   }
   &__frame-logo {
     display: block;
     width: 385px;
+    @include laptop {
+      width: 300px;
+    }
+    @include laptop-middle {
+      width: 250px;
+    }
   }
   &__frame-text {
     max-width: 555px;
     font-size: 55px;
     line-height: 109%;
+    @include laptop {
+      font-size: 45px;
+    }
+    @include laptop-middle {
+      font-size: 40px;
+      max-width: 410px;
+    }
+    @include tablet-min {
+      font-size: 22px;
+    }
+  }
+  &__scroll-btn {
+    position: fixed;
+    left: 50%;
+    bottom: 75px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 24px;
+    line-height: 100%;
+
+    @include laptop {
+      bottom: 55px;
+    }
+    @include laptop-min {
+      bottom: 40px;
+      font-size: 20px;
+    }
+    @include tablet-min {
+      bottom: 20px;
+      font-size: 18px;
+    }
+
+    .item-rect {
+      @include flex-center;
+      width: 25px;
+      height: 30px;
+      border: 1px solid currentColor;
+      font-size: 12px;
+    }
+  }
+  &__frame-bottom {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+  }
+  &__frame-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    @include tablet {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  &__frame-content {
+    font-size: 40px;
+    line-height: 150%;
+    text-transform: uppercase;
+    max-width: 715px;
+    margin: 0;
+
+    opacity: 0;
+    transform: translateX(-100%);
+
+    @include laptop-middle {
+      font-size: 32px;
+      max-width: 575px;
+    }
+    @include laptop-min {
+      font-size: 26px;
+    }
+    @include tablet {
+      max-width: none;
+      font-size: 24px;
+    }
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+  &__frame-btn {
+    width: 250px;
+    max-width: 100%;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    @include tablet-min {
+      width: 100%;
+    }
   }
 }
