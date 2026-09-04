@@ -6,6 +6,13 @@
   min-height: 400vh;
   z-index: 1;
 
+  @include tablet {
+    min-height: 300vh;
+  }
+  @include tablet-min {
+    min-height: 200vh;
+  }
+
   &::before,
   &::after {
     position: absolute;

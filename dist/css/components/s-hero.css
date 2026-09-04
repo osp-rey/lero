@@ -185,6 +185,10 @@
 }
 
 @media (max-width: 767px) {
+  .s-hero {
+    min-height: 300vh;
+  }
+
   .s-hero__frame {
     padding-top: 100px;
   }
@@ -216,6 +220,10 @@
 }
 
 @media (max-width: 575px) {
+  .s-hero {
+    min-height: 200vh;
+  }
+
   .s-hero__frame-text {
     font-size: 22px;
   }

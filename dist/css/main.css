@@ -1128,6 +1128,10 @@ img {
     font-size: 28px;
   }
 
+  .s-hero {
+    min-height: 300vh;
+  }
+
   .s-hero__frame {
     padding-top: 100px;
   }
@@ -1163,6 +1167,10 @@ img {
     font-size: 23px;
     top: 12px;
     right: 12px;
+  }
+
+  .s-hero {
+    min-height: 200vh;
   }
 
   .s-hero__frame-text {
