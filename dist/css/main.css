@@ -661,6 +661,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 50px;
 }
@@ -1454,6 +1455,20 @@ img {
   height: 100%;
 }
 
+.s-booklet__title {
+  max-width: 555px;
+}
+
+.s-booklet__picture {
+  display: block;
+  margin: 0 auto;
+}
+
+.s-booklet__picture img {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: 481px) {
   .s-production__grid [data-more-item]:nth-child(-n+6) {
     display: block;
@@ -1864,7 +1879,7 @@ img {
 
 @media (any-hover: hover) {
   .btn-s:hover {
-    background-color: var(--backround-h);
+    background-color: var(--background-h);
     border-color: var(--border-h);
     color: var(--color-h);
   }
@@ -1969,7 +1984,7 @@ img {
 
 @media (hover: none) {
   .btn-s:active {
-    background-color: var(--backround-h);
+    background-color: var(--background-h);
     border-color: var(--border-h);
     color: var(--color-h);
   }

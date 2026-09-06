@@ -28,7 +28,7 @@
     border-color 0.3s ease;
 
   @include hover {
-    background-color: var(--backround-h);
+    background-color: var(--background-h);
     border-color: var(--border-h);
     color: var(--color-h);
   }

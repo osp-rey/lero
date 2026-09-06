@@ -1,0 +1,17 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-booklet {
+  &__title {
+    max-width: 555px;
+  }
+  &__picture {
+    display: block;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

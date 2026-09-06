@@ -71,7 +71,7 @@
 
 @media (any-hover: hover) {
   .btn-s:hover {
-    background-color: var(--backround-h);
+    background-color: var(--background-h);
     border-color: var(--border-h);
     color: var(--color-h);
   }
@@ -85,7 +85,7 @@
 
 @media (hover: none) {
   .btn-s:active {
-    background-color: var(--backround-h);
+    background-color: var(--background-h);
     border-color: var(--border-h);
     color: var(--color-h);
   }

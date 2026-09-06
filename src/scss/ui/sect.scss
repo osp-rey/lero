@@ -18,6 +18,7 @@
 
 .sect-head {
   @include flex-between;
+  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 50px;
   @include laptop-middle {

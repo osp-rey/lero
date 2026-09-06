@@ -1,0 +1,13 @@
+.s-booklet__title {
+  max-width: 555px;
+}
+
+.s-booklet__picture {
+  display: block;
+  margin: 0 auto;
+}
+
+.s-booklet__picture img {
+  display: block;
+  margin: 0 auto;
+}
