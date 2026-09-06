@@ -61,6 +61,14 @@
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
+@media (max-width: 767px) {
+  .btn-play {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+  }
+}
+
 @media (any-hover: hover) {
   .btn-s:hover {
     background-color: var(--backround-h);

@@ -16,10 +16,6 @@
     @include laptop-min {
       display: block;
     }
-
-    .slider-arrows {
-      margin-left: auto;
-    }
   }
   &__tabs-nav {
     display: flex;
@@ -76,7 +72,12 @@
       transition: right 0.3s ease;
     }
   }
-
+  &__tabs-arrows {
+    margin-left: auto;
+    @include laptop-min {
+      display: none;
+    }
+  }
   &__slider {
     width: 100%;
     .swiper-slide {
@@ -86,12 +87,6 @@
       .card-portfolio {
         height: 100%;
       }
-    }
-    .btn-play {
-      position: absolute;
-      right: 30px;
-      bottom: 30px;
-      z-index: 10;
     }
   }
 }

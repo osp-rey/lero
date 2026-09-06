@@ -8,6 +8,9 @@
   border-radius: 15px 15px 0 0;
   overflow: hidden;
   color: black;
+  @include tablet {
+    border-radius: 12px 12px 0px 0px;
+  }
 
   &__slider {
     width: 100%;
@@ -24,6 +27,31 @@
       }
       &._next {
         right: 30px;
+      }
+
+      @include laptop-min {
+        display: none;
+      }
+    }
+    .slider-pagination {
+      position: absolute;
+      left: 50%;
+      bottom: 15px;
+      transform: translateX(-50%);
+      z-index: 10;
+      @media (min-width: 1026px) {
+        display: none !important;
+      }
+    }
+    .btn-play {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      z-index: 10;
+
+      @include laptop {
+        right: 15px;
+        bottom: 15px;
       }
     }
   }
@@ -43,30 +71,47 @@
   &__body {
     flex: 1;
     padding: 30px;
+    @include laptop-min {
+      padding: 20px;
+    }
   }
   &__tag {
     font-size: 18px;
     line-height: 100%;
     color: rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
+    @include laptop-min {
+      font-size: 16px
+      mb15  
+    }
   }
   &__title {
     font-weight: 400;
     font-size: 24px;
     line-height: 100%;
     margin: 0;
+    @include laptop-min {
+      font-size: 20px;
+    }
   }
   &__content {
     padding-top: 30px;
     border-top: 1px solid rgba(0, 0, 0, 0.6);
     margin-top: 30px;
     color: rgba(0, 0, 0, 0.8);
+    @include laptop-min {
+      margin-top: 20px;
+      padding-top: 20px;
+    }
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
     gap: 20px;
+    @include laptop-min {
+      gap: 10px;
+    }
 
     li {
       padding: 15px 20px;
@@ -74,6 +119,10 @@
 
       font-size: 13px;
       line-height: 115%;
+
+      @include laptop-min {
+        padding: 12px 16px;
+      }
     }
   }
 }

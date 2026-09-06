@@ -81,4 +81,10 @@
     background-color: var(--background-h);
     color: var(--color-h);
   }
+
+  @include tablet {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+  }
 }
