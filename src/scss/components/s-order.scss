@@ -1,0 +1,58 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-order {
+  &__block {
+    width: 765px;
+    max-width: 100%;
+    padding: 70px 50px;
+
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.4);
+
+    @include laptop-min {
+      padding: 50px 30px;
+    }
+    @include tablet {
+      padding: 30px 16px;
+    }
+  }
+  &__title {
+    margin-bottom: 50px;
+    @include laptop {
+      margin-bottom: 30px;
+    }
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    @include tablet {
+      gap: 15px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      @include tablet {
+        gap: 15px;
+      }
+      @include tablet-min {
+        grid-template-columns: 1fr;
+      }
+    }
+    .check-wrapper {
+      a {
+        color: var(--primary);
+      }
+    }
+    .btn-s {
+      @include tablet-min {
+        width: 100%;
+      }
+    }
+  }
+}

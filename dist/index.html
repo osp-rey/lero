@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="./files/icomoon/style.css" />
 <link rel="stylesheet" href="./files/fancybox/fancybox.min.css" />
 <link rel="stylesheet" href="./files/swiper/swiper.min.css" />
-<link rel="stylesheet" href="./css/main.css?ver=@@versions.css" />
+<link rel="stylesheet" href="./css/main.css?ver=mtr4xy8o" />
 <title>LERO</title>
 
 </head>
@@ -24,11 +24,11 @@
       </div>
       <nav class="header__nav">
         <ul class="list header__list anchors">
-          <li><a href="#s-about">О нас</a></li>
-          <li><a href="#s-portfolio">Наше портфолио</a></li>
-          <li><a href="#s-reviews">Отзывы</a></li>
-          <li><a href="#s-production">Производство</a></li>
-          <li><a href="#s-contacts">Контакты</a></li>
+          <li><a href="/#s-about">О нас</a></li>
+          <li><a href="/#s-portfolio">Наше портфолио</a></li>
+          <li><a href="/#s-video">Отзывы</a></li>
+          <li><a href="/#s-production">Производство</a></li>
+          <li><a href="/#s-contacts">Контакты</a></li>
         </ul>
       </nav>
       <div class="header__contacts">
@@ -72,11 +72,11 @@
       </div>
     </div>
     <ul class="list burger__list anchors">
-      <li><a href="#s-about">О нас</a></li>
-      <li><a href="#s-portfolio">Наше портфолио</a></li>
-      <li><a href="#s-reviews">Отзывы</a></li>
-      <li><a href="#s-production">Производство</a></li>
-      <li><a href="#s-contacts">Контакты</a></li>
+      <li><a href="/#s-about">О нас</a></li>
+      <li><a href="/#s-portfolio">Наше портфолио</a></li>
+      <li><a href="/#s-video">Отзывы</a></li>
+      <li><a href="/#s-production">Производство</a></li>
+      <li><a href="/#s-contacts">Контакты</a></li>
     </ul>
     <div class="burger__contacts">
       <div class="social">
@@ -110,13 +110,15 @@
       <div data-fancybox-close class="modal__close">
         <i class="icon-close"></i>
       </div>
-      <div class="modal__title" data-text="Оставить заявку">Оставить заявку</div>
+      <div class="modal__title" data-text="Оставить заявку">
+        Оставить заявку
+      </div>
       <p class="modal__content">
         Оставьте заявку и мы свяжемся с Вами в ближайшее время
       </p>
       <form action="#" class="modal__form">
-        <div style="display: none;">
-          <input type="text" class="input-note">
+        <div style="display: none">
+          <input type="text" class="input-note" />
         </div>
         <div class="form-grid">
           <div class="form-control">
@@ -154,12 +156,70 @@
       </form>
     </div>
   </div>
-  <div class="modal" id="modal-thank"></div>
+  <div class="modal" id="modal-thank">
+    <div class="modal__body">
+      <div data-fancybox-close class="modal__close">
+        <i class="icon-close"></i>
+      </div>
+      <div class="modal__title" data-text="Благодарим за заявку">
+        Благодарим за заявку
+      </div>
+      <p class="modal__content">
+        Мы свяжемся с Вами в ближайшее время.
+      </p>
+    </div>
+  </div>
 </aside>
 
   
   <main>
-    
+    <div class="s-hero-wrap">
+  <section class="s-hero">
+    <div class="s-hero__gallery">
+      <div class="s-hero__gallery-inside">
+        <div
+          class="s-hero__scroll-video"
+          id="hero-video"
+          data-src="./files/video.mp4"
+        ></div>
+      </div>
+    </div>
+    <div class="s-hero__frame _start" id="hero-frame-start">
+      <div class="container">
+        <div class="s-hero__frame-center">
+          <div class="s-hero__frame-center-wrap">
+            <img src="img/logo-full.svg" alt="logo" class="s-hero__frame-logo" />
+            <div class="separator"></div>
+            <div class="s-hero__frame-text">КОМФОРТ НАЧИНАЕТСЯ С НАС</div>
+          </div>
+        </div>
+        <div class="s-hero__scroll-btn">
+          <span>Scroll</span>
+          <div class="item-rect">
+            <i class="icon-arrow-bottom"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s-hero__frame _bottom _second" id="hero-frame-second">
+      <div class="container">
+        <div class="s-hero__frame-wrap">
+          <p class="s-hero__frame-content">
+            Изготовим корпусную мебель и кухонный гарнитур для вашей квартиры
+            под ваш бюджет
+          </p>
+          <a
+            href="#modal-feedback"
+            data-fancybox
+            class="btn-s _white s-hero__frame-btn"
+          >
+            Опишите задачу
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
     <section class="sect-p s-production" id="s-production">
   <div class="container">
     <div class="sect-head">
@@ -478,10 +538,10 @@
     <section class="sect-p s-portfolio bg-mine-shaft" id="s-portfolio">
   <div class="container tabs">
     <div class="sect-head">
-      <h2 class="s-title s-portfolio__title">
+      <div class="s-title s-portfolio__title">
         Примеры наших работ по изготовлению корпусной мебели и кухонных
         гарнитуров
-      </h2>
+      </div>
     </div>
     <div class="s-portfolio__nav-wrap">
       <div class="tabs-nav s-portfolio__tabs-nav">
@@ -876,6 +936,1266 @@
         </div>
         <div class="slider-scrollbar _lap-min"></div>
       </div>
+      <div data-tab="tab-0">
+        <div class="swiper s-portfolio__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="slider-scrollbar _lap-min"></div>
+      </div>
+      <div data-tab="tab-1">
+        <div class="swiper s-portfolio__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="slider-scrollbar _lap-min"></div>
+      </div>
+      <div data-tab="tab-2">
+        <div class="swiper s-portfolio__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="slider-scrollbar _lap-min"></div>
+      </div>
+      <div data-tab="tab-3">
+        <div class="swiper s-portfolio__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card-portfolio">
+                <div class="swiper card-portfolio__slider">
+                  <div class="slider-arrow _prev">
+                    <i class="icon-prev"></i>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                    <a
+                      href="img/portfolio.jpg"
+                      data-fancybox
+                      class="swiper-slide card-portfolio__slide"
+                    >
+                      <img src="img/portfolio.jpg" alt="image" />
+                    </a>
+                  </div>
+                  <div class="slider-arrow _next">
+                    <i class="icon-next"></i>
+                  </div>
+                  <div class="slider-pagination _blur"></div>
+                  <a href="img/hero.jpg" data-fancybox class="btn-play">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="card-portfolio__body">
+                  <div class="card-portfolio__tag">Кухни</div>
+                  <h3 class="card-portfolio__title">
+                    Белая кухня со встроенной техникой
+                  </h3>
+                  <div class="content-box card-portfolio__content">
+                    <h5>Какие задачи стояли:</h5>
+                    <p>
+                      Интерьер создавался для дизайнера. Мы стремились к
+                      максимальной лёгкости: белая кухня не перегружает
+                      пространство, а плавно в него вливается. Техника полностью
+                      скрыта за фасадами, поэтому ничто не нарушает чистоту линий.
+                    </p>
+                    <p>
+                      <span style="color: black">Габариты (ШхВхГ):</span>
+                      222,6/423 х 282,6 х 32/60 см
+                      <br />
+                      <span style="color: black">Корпус:</span>
+                      ЛДСП 16 мм, Egger
+                      <br />
+                      <span style="color: black">Кромка:</span>
+                      Egger ПВХ 2,0 х 19 мм «Белый»
+                      <br />
+                      <span style="color: black">Фасад:</span>
+                      МДФ 19 мм и 16 мм с фрезеровкой
+                      <br />
+                      <span style="color: black">Покрытие фасада:</span>
+                      «Эмаль матовая»
+                      <br />
+                    </p>
+                  </div>
+                  <ul class="list card-portfolio__list">
+                    <li>Классическая фрезеровка</li>
+                    <li>Золотые ручки</li>
+                    <li>Встроенная техника</li>
+                    <li>Push to open</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="slider-scrollbar _lap-min"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -883,9 +2203,9 @@
     <section class="sect-m s-booklet" id="s-booklet">
   <div class="container">
     <div class="sect-head">
-      <h2 class="s-title s-booklet__title">
+      <div class="s-title s-booklet__title">
         Изготовим для Вас дизайн-проект, прежде чем начать работу
-      </h2>
+      </div>
       <a
         href="#modal-feedback"
         data-fancybox
@@ -903,9 +2223,681 @@
   </div>
 </section>
 
+    <section class="sect-m s-order" id="s-order">
+  <div class="container">
+    <div class="s-order__body sect-body" style="background: url('img/order.jpg') 0 0 / cover no-repeat;">
+      <div class="s-order__block">
+        <div class="s-title s-order__title">
+          При заказе кухни
+          <br />
+          мебельный гарнитур в подарок
+        </div>
+        <form action="#" class="s-order__form">
+          <div class="form-grid">
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Номер телефона" class="input" />
+            </div>
+          </div>
+          <div class="check-wrapper">
+            <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+              <span class="wpcf7-form-control wpcf7-acceptance">
+                <span class="wpcf7-list-item">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="acceptance-297"
+                      value="1"
+                      aria-invalid="false"
+                    />
+                    <span class="wpcf7-list-item-label">
+                      <span>
+                        Я соглашаюсь с
+                        <a href="/personal-data" target="_blank">
+                          Правилами обработки персональных данных
+                        </a>
+                      </span>
+                    </span>
+                  </label>
+                </span>
+              </span>
+            </span>
+          </div>
+          <button type="submit" class="btn-s">Заказать дизайн-проект</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p bg-mine-shaft s-about" id="s-about">
+  <div class="container">
+    <div class="s-about__wrapper">
+      <div class="s-about__info">
+        <h1 class="s-title s-about__title">LERO мебель - это</h1>
+        <div class="content-box s-about__content">
+          <p>
+            LERO мебель - это Таким образом, высокотехнологичная концепция
+            общественного уклада не даёт нам иного выбора, кроме определения
+            приоретизации разума над эмоциями. Для современного мира выбранный
+            нами инновационный путь, а также свежий взгляд на привычные вещи —
+            безусловно открывает новые горизонты для поставленных обществом
+            задач.
+          </p>
+          <p>
+            Высокий уровень вовлечения представителей целевой аудитории является
+            четким доказательством простого факта: экономическая повестка
+            сегодняшнего дня способствует повышению качества анализа
+            существующих паттернов поведения. Проекты любой сложности Рассрочка
+            0% до 12 месяцев Своё производство Дизайн-проект и замер - бесплатно
+          </p>
+        </div>
+        <div class="s-about__adv">
+          <div class="s-about__adv-item">
+            <img src="img/about-logo.svg" alt="icon" />
+            <span>
+              Проекты любой
+              <br />
+              сложности
+            </span>
+          </div>
+          <div class="s-about__adv-item">
+            <img src="img/about-logo.svg" alt="icon" />
+            <span>
+              Рассрочка 0%
+              <br />
+              до 12 месяцев
+            </span>
+          </div>
+          <div class="s-about__adv-item">
+            <img src="img/about-logo.svg" alt="icon" />
+            <span>Своё производство</span>
+          </div>
+          <div class="s-about__adv-item">
+            <img src="img/about-logo.svg" alt="icon" />
+            <span>
+              Дизайн-проект
+              <br />
+              и замер - бесплатно
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="s-about__gallery">
+        <img src="img/about.jpg" alt="image" class="s-about__gallery-img" />
+        <img src="img/about-logo.svg" alt="logo" class="s-about__logo" />
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p bg-mine-shaft s-team" id="s-team">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Команда LERO мебель</h2>
+      <div class="slider-arrows">
+        <div class="slider-arrow _prev">
+          <i class="icon-prev"></i>
+        </div>
+        <div class="slider-arrow _next">
+          <i class="icon-next"></i>
+        </div>
+      </div>
+    </div>
+    <div class="swiper s-team__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="card-team">
+            <img src="img/team.jpg" alt="image" class="card-team__img">
+            <h5 class="card-team__title">Иван Иванов</h5>
+            <div class="card-team__post">Должность</div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <img src="img/team.jpg" alt="image" class="card-team__img">
+            <h5 class="card-team__title">Иван Иванов</h5>
+            <div class="card-team__post">Должность</div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <img src="img/team.jpg" alt="image" class="card-team__img">
+            <h5 class="card-team__title">Иван Иванов</h5>
+            <div class="card-team__post">Должность</div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <img src="img/team.jpg" alt="image" class="card-team__img">
+            <h5 class="card-team__title">Иван Иванов</h5>
+            <div class="card-team__post">Должность</div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <img src="img/team.jpg" alt="image" class="card-team__img">
+            <h5 class="card-team__title">Иван Иванов</h5>
+            <div class="card-team__post">Должность</div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <img src="img/team.jpg" alt="image" class="card-team__img">
+            <h5 class="card-team__title">Иван Иванов</h5>
+            <div class="card-team__post">Должность</div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="slider-scrollbar"></div>
+  </div>
+</section>
+    <section class="sect-m s-get" id="s-get">
+  <div class="container">
+    <div class="s-get__body sect-body">
+      <picture class="s-get__decor">
+        <img src="img/get-decor.png" alt="decor">
+      </picture>
+      <div class="s-get__wrapper">
+        <h2 class="s-title s-get__title">
+          Есть готовый дизайн-проект?
+          <br />
+          Мы бесплатно просчитаем его прямо сейчас
+        </h2>
+        <div class="content-box s-get__content">
+          <p>
+            Есть готовый дизайн-проект? Мы бесплатно просчитаем его прямо сейчас
+          </p>
+        </div>
+        <form action="#" class="s-get__form">
+          <div class="form-grid">
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Номер телефона" class="input" />
+            </div>
+            <div class="form-control">
+              <label class="file-wrapper">
+                <input type="file" />
+                <div class="file-btn">
+                  <span class="file-name">Прикрепить дизайн-проект</span>
+                  <i class="icon-attach"></i>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="check-wrapper">
+            <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+              <span class="wpcf7-form-control wpcf7-acceptance">
+                <span class="wpcf7-list-item">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="acceptance-297"
+                      value="1"
+                      aria-invalid="false"
+                    />
+                    <span class="wpcf7-list-item-label">
+                      <span>
+                        Я соглашаюсь с
+                        <a href="/personal-data" target="_blank">
+                          Правилами обработки персональных данных
+                        </a>
+                      </span>
+                    </span>
+                  </label>
+                </span>
+              </span>
+            </span>
+          </div>
+          <button type="submit" class="btn-s">Заказать дизайн-проект</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-gallery" id="s-gallery">
+  <div class="container">
+    <div class="s-gallery__wrapper">
+      <div class="s-gallery__slider-wrapper">
+        <div class="slider-arrow _prev _dark">
+          <i class="icon-prev"></i>
+        </div>
+        <div class="slider-arrow _next _dark">
+          <i class="icon-next"></i>
+        </div>
+        <div class="swiper s-gallery__slider">
+          <div class="swiper-wrapper">
+            <a
+              href="img/gallery.jpg"
+              data-fancybox="gallery"
+              class="swiper-slide s-gallery__slide"
+            >
+              <img src="img/gallery.jpg" alt="image" />
+              <div class="btn-play">
+                <i class="icon-play"></i>
+              </div>
+            </a>
+            <a
+              href="img/gallery.jpg"
+              data-fancybox="gallery"
+              class="swiper-slide s-gallery__slide"
+            >
+              <img src="img/gallery.jpg" alt="image" />
+              <div class="btn-play">
+                <i class="icon-play"></i>
+              </div>
+            </a>
+            <a
+              href="img/gallery.jpg"
+              data-fancybox="gallery"
+              class="swiper-slide s-gallery__slide"
+            >
+              <img src="img/gallery.jpg" alt="image" />
+              <div class="btn-play">
+                <i class="icon-play"></i>
+              </div>
+            </a>
+            <a
+              href="img/gallery.jpg"
+              data-fancybox="gallery"
+              class="swiper-slide s-gallery__slide"
+            >
+              <img src="img/gallery.jpg" alt="image" />
+              <div class="btn-play">
+                <i class="icon-play"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="s-gallery__info">
+        <div class="s-gallery__info-main">
+          <h2 class="s-title s-gallery__title">
+            Собственное производство <br> всей мебели
+          </h2>
+          <div class="content-box s-gallery__content">
+            <p>
+              Таким образом, высокотехнологичная концепция общественного уклада не
+              даёт нам иного выбора, кроме определения приоретизации разума над
+              эмоциями.
+              <br />
+              Для современного мира выбранный нами инновационный путь, а также
+              свежий взгляд на привычные вещи — безусловно открывает новые
+              горизонты для поставленных обществом задач.
+            </p>
+          </div>
+        </div>
+        <div class="swiper s-gallery__thumb-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide s-gallery__thumb-slide" style="background: url('img/gallery.jpg') 0 0 / cover no-repeat;"></div>
+            <div class="swiper-slide s-gallery__thumb-slide" style="background: url('img/gallery.jpg') 0 0 / cover no-repeat;"></div>
+            <div class="swiper-slide s-gallery__thumb-slide" style="background: url('img/gallery.jpg') 0 0 / cover no-repeat;"></div>
+            <div class="swiper-slide s-gallery__thumb-slide" style="background: url('img/gallery.jpg') 0 0 / cover no-repeat;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-adv" id="s-adv">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Преимущества нашей мебели</h2>
+    </div>
+    <div class="s-adv__grid">
+      <div class="s-adv__item">
+        <img src="img/adv.png" alt="icon" />
+        <span>Работаем только с проверенными поставщиками ЛДСП</span>
+      </div>
+      <div class="s-adv__item">
+        <img src="img/adv.png" alt="icon" />
+        <span>Кромка на ЛДСП с Пур клеем</span>
+      </div>
+      <div class="s-adv__item">
+        <img src="img/adv.png" alt="icon" />
+        <span>Любой вид фрезеровок на МДФ панелях</span>
+      </div>
+      <div class="s-adv__item">
+        <img src="img/adv.png" alt="icon" />
+        <span>ЧПУ присадка деталей, уменьшает риск ошибок на производстве</span>
+      </div>
+      <div class="s-adv__item">
+        <img src="img/adv.png" alt="icon" />
+        <span>ЧПУ присадка деталей, уменьшает риск ошибок на производстве</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p bg-mine-shaft s-video" id="s-video">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Видео-отзывы</h2>
+    </div>
+    <div class="swiper s-video__slider">
+      <div class="swiper-wrapper">
+        <a href="img/video.jpg" data-fancybox="video-gallery" class="swiper-slide s-video__slide">
+          <img src="img/video.jpg" alt="image">
+          <div class="btn-play">
+            <i class="icon-play"></i>
+          </div>
+        </a>
+        <a href="img/video.jpg" data-fancybox="video-gallery" class="swiper-slide s-video__slide">
+          <img src="img/video.jpg" alt="image">
+          <div class="btn-play">
+            <i class="icon-play"></i>
+          </div>
+        </a>
+        <a href="img/video.jpg" data-fancybox="video-gallery" class="swiper-slide s-video__slide">
+          <img src="img/video.jpg" alt="image">
+          <div class="btn-play">
+            <i class="icon-play"></i>
+          </div>
+        </a>
+        <a href="img/video.jpg" data-fancybox="video-gallery" class="swiper-slide s-video__slide">
+          <img src="img/video.jpg" alt="image">
+          <div class="btn-play">
+            <i class="icon-play"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="slider-scrollbar"></div>
+  </div>
+</section>
+    <section class="s-faq sect-m" id="s-faq">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Частые вопросы</h2>
+    </div>
+    <div data-spollers class="s-faq__spollers-wrap">
+      <div class="s-faq__spollers-col">
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>В какие города доступна доставка?</span>
+            <div class="item-rect">
+              <i class="icon-bottom"></i>
+            </div>
+          </div>
+          <div>
+            <div class="s-faq__spoller-content content-box">
+              <p>
+                Прежде всего, постоянный количественный рост и сфера нашей
+                активности не оставляет шанса для поставленных обществом задач.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>В какие города доступна доставка?</span>
+            <div class="item-rect">
+              <i class="icon-bottom"></i>
+            </div>
+          </div>
+          <div>
+            <div class="s-faq__spoller-content content-box">
+              <p>
+                Прежде всего, постоянный количественный рост и сфера нашей
+                активности не оставляет шанса для поставленных обществом задач.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>В какие города доступна доставка?</span>
+            <div class="item-rect">
+              <i class="icon-bottom"></i>
+            </div>
+          </div>
+          <div>
+            <div class="s-faq__spoller-content content-box">
+              <p>
+                Прежде всего, постоянный количественный рост и сфера нашей
+                активности не оставляет шанса для поставленных обществом задач.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>В какие города доступна доставка?</span>
+            <div class="item-rect">
+              <i class="icon-bottom"></i>
+            </div>
+          </div>
+          <div>
+            <div class="s-faq__spoller-content content-box">
+              <p>
+                Прежде всего, постоянный количественный рост и сфера нашей
+                активности не оставляет шанса для поставленных обществом задач.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-faq__spollers-col">
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>В какие города доступна доставка?</span>
+            <div class="item-rect">
+              <i class="icon-bottom"></i>
+            </div>
+          </div>
+          <div>
+            <div class="s-faq__spoller-content content-box">
+              <p>
+                Прежде всего, постоянный количественный рост и сфера нашей
+                активности не оставляет шанса для поставленных обществом задач.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>В какие города доступна доставка?</span>
+            <div class="item-rect">
+              <i class="icon-bottom"></i>
+            </div>
+          </div>
+          <div>
+            <div class="s-faq__spoller-content content-box">
+              <p>
+                Прежде всего, постоянный количественный рост и сфера нашей
+                активности не оставляет шанса для поставленных обществом задач.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>В какие города доступна доставка?</span>
+            <div class="item-rect">
+              <i class="icon-bottom"></i>
+            </div>
+          </div>
+          <div>
+            <div class="s-faq__spoller-content content-box">
+              <p>
+                Прежде всего, постоянный количественный рост и сфера нашей
+                активности не оставляет шанса для поставленных обществом задач.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>В какие города доступна доставка?</span>
+            <div class="item-rect">
+              <i class="icon-bottom"></i>
+            </div>
+          </div>
+          <div>
+            <div class="s-faq__spoller-content content-box">
+              <p>
+                Прежде всего, постоянный количественный рост и сфера нашей
+                активности не оставляет шанса для поставленных обществом задач.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-connect" id="s-connect">
+  <div class="container">
+    <div
+      class="s-connect__body sect-body"
+      style="background: url(&quot;img/order.jpg&quot;) 0 0 / cover no-repeat"
+    >
+      <div class="s-connect__block">
+        <div class="s-connect__head">
+          <h2 class="s-title">Остались вопросы?</h2>
+          <div class="s-connect__content content-box">
+            <p>
+              Заполните форму, и наш менеджер свяжется с Вами в течение 15 минут
+            </p>
+          </div>
+        </div>
+        <form action="#" class="s-connect__form">
+          <div class="form-grid">
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Номер телефона" class="input" />
+            </div>
+            <div class="check-wrapper">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-297">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-297"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я соглашаюсь с
+                          <a href="/personal-data" target="_blank">
+                            Правилами обработки персональных данных
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+            <button type="submit" class="btn-s">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-contacts" id="s-contacts">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Наши контакты</h2>
+    </div>
+    <div class="s-contacts__wrap">
+      <div class="s-contacts__info">
+        <div class="s-contacts__item">
+          <div class="item-name">Телефон:</div>
+          <a href="tel:+79999999999" class="item-val">+7 (999) 999-99-99</a>
+        </div>
+        <div class="s-contacts__item">
+          <div class="item-name">Наш адрес:</div>
+          <div class="item-val">Казань, ул. Пушкина, д. 7</div>
+        </div>
+        <div class="s-contacts__item">
+          <div class="item-name">График работы:</div>
+          <div class="item-val">пн-пт с 09:00 до 19:00</div>
+        </div>
+        <div class="s-contacts__item">
+          <div class="item-name">Мессенджеры:</div>
+          <div class="social">
+            <a href="#" target="_blank" class="social-item">
+              <i class="icon-max"></i>
+            </a>
+            <a href="#" target="_blank" class="social-item">
+              <i class="icon-tg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        data-center="[55.78680406893723,49.120966500000016]"
+        data-zoom="18"
+        class="s-contacts__map map"
+      ></div>
+    </div>
+  </div>
+</section>
+
   </main>
 
-  <footer class="footer"></footer>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__main">
+        <div class="footer__logo-wrap">
+          <a href="/" class="footer__logo">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <p class="footer__main-content">
+          Все права защищены. Копирование материалов строго по согласию
+          администрации сайта.
+        </p>
+      </div>
+      <ul class="list footer__list anchors">
+        <li><a href="/#s-about">О нас</a></li>
+        <li><a href="/#s-portfolio">Наше портфолио</a></li>
+        <li><a href="/#s-video">Отзывы</a></li>
+        <li><a href="/#s-production">Производство</a></li>
+        <li><a href="/#s-contacts">Контакты</a></li>
+      </ul>
+      <div class="footer__contacts">
+        <div class="footer__contacts-item">
+          <a href="tel:+79999999999" class="footer__tel">+7 (999) 999-99-99</a>
+          <a href="mailto:mail@domain.ru" class="footer__mail _opacity">
+            mail@domain.ru
+          </a>
+        </div>
+        <div class="footer__contacts-item">
+          <div class="footer__contacts-text">Казань, ул. Пушкина, д. 7</div>
+          <div class="footer__contacts-text _opacity">
+            пн-пт с 09:00 до 19:00
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">© ЛЕРО МЕБЕЛЬ, ИНН: 000000000</div>
+      <ul class="list footer__bottom-list">
+        <li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+        <li>
+          <a href="#" target="_blank">Политика обработки персональных данных</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 <script src="./files/inputmask/inputmask.min.js"></script>
 <script src="./files/fancybox/fancybox.min.js"></script>
@@ -913,7 +2905,8 @@
 <script src="./files/gsap/gsap.min.js"></script>
 <script src="./files/gsap/scrollTrigger.min.js"></script>
 <script src="./files/swiper/swiper.min.js"></script>
+
   
-  <script src="./js/app.js?ver=@@versions.js"></script>
+  <script src="./js/app.js?ver=mtr4xy8o"></script>
 </body>
 </html>

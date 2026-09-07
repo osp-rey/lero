@@ -1,0 +1,45 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-video {
+  &__slider {
+  }
+  &__slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    aspect-ratio: 1/1.3;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: linear-gradient(
+        258.04deg,
+        rgba(44, 40, 35, 0) 19.78%,
+        #2c2823 83.79%
+      );
+      z-index: -1;
+    }
+
+    @include hover {
+      img {
+        transform: scale(1.08);
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.3s linear;
+      z-index: -2;
+    }
+  }
+}

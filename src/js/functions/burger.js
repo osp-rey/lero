@@ -5,13 +5,13 @@ export default function burger() {
     const burgerOpen = document.querySelector("#burger-open");
     const burgerCloses = document.querySelectorAll("[data-burger-close]");
     const burgerOverlay = document.querySelector("#burger-overlay");
-    const burgerAnchors = burger.querySelectorAll(".anchors a[href^='/#']");
-
-    // burgerAnchors.forEach((anchor) => {
-    //   anchor.addEventListener("click", () => {
-    //     handleClose();
-    //   });
-    // });
+    const burgerAnchors = burger.querySelectorAll("a[href^='/#']");
+    console.log(burgerAnchors)
+    burgerAnchors.forEach((anchor) => {
+      anchor.addEventListener("click", () => {
+        handleClose();
+      });
+    });
     burgerOverlay.addEventListener("click", handleClose);
 
     burgerOpen.addEventListener("click", () => {

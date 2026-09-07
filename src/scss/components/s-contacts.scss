@@ -1,0 +1,64 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-contacts {
+  &__wrap {
+    display: flex;
+    gap: 30px;
+
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 0 1 575px;
+
+    @include laptop {
+      flex-basis: 450px;
+    }
+    @include laptop-middle {
+      flex-basis: 400px;
+      gap: 20px;
+    }
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+      @include laptop-middle {
+        padding-bottom: 20px;
+      }
+    }
+
+    .item-name {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 15px;
+    }
+    .item-val {
+      font-size: 24px;
+      line-height: 100%;
+      @include laptop-middle {
+        font-size: 20px;
+      }
+    }
+    a.item-val {
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
+  }
+  &__map {
+    flex: 1;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}

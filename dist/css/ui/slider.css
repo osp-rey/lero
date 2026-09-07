@@ -29,6 +29,11 @@
   opacity: 0.5;
 }
 
+.slider-arrow._dark {
+  --background: rgba(0, 0, 0, 0.4);
+  --background-h: rgba(0, 0, 0, 0.6);
+}
+
 .slider-pagination {
   display: flex;
   width: fit-content !important;
@@ -60,7 +65,7 @@
 
 .slider-scrollbar {
   margin-top: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.6);
   height: 1px;
 }
 

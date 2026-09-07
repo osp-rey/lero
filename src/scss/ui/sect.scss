@@ -3,16 +3,24 @@
 
 .sect-p {
   padding: 75px 0px;
+  scroll-margin-top: 75px;
 
   @include laptop-min {
     padding: 60px 0px;
+    scroll-margin-top: 60px;
+  }
+
+  &.bg-mine-shaft + .sect-p.bg-mine-shaft {
+    padding-top: 0 !important;
   }
 }
 .sect-m {
   margin: 75px 0px;
+  scroll-margin-top: 150px;
 
   @include laptop-min {
     margin: 60px 0px;
+    scroll-margin-top: 100px;
   }
 }
 
@@ -31,4 +39,17 @@
 
 .bg-mine-shaft {
   background-color: var(--mine-shaft);
+}
+
+.sect-body {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 75px 30px;
+  @include laptop-min {
+    padding: 50px 20px;
+  }
+  @include tablet-min {
+    padding: 50px 18px;
+  }
 }

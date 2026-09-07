@@ -1,0 +1,75 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-faq {
+  &__spollers-wrap {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 0px;
+    }
+  }
+  &__spollers-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    @include laptop {
+      gap: 0;
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        .s-faq__spoller {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  &__spoller {
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+
+    &:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    }
+  }
+  &__spoller-btn {
+    @include flex-between;
+    gap: 20px;
+    user-select: none;
+    padding: 15px 0px;
+    cursor: pointer;
+
+    font-size: 24px;
+    line-height: 100%;
+
+    @include laptop {
+      font-size: 20px;
+    }
+    @include laptop-min {
+      font-size: 18px;
+    }
+
+    &._spoller-active {
+      .item-rect {
+        transform: rotate(180deg);
+      }
+    }
+
+    .item-rect {
+      @include flex-center;
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+      font-size: 10px;
+
+      transition: transform 0.3s ease;
+    }
+  }
+  &__spoller-content {
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

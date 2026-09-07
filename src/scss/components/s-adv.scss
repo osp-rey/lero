@@ -1,0 +1,45 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-adv {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    @include laptop-middle {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+
+    @include laptop {
+      font-size: 16px;
+      gap: 30px;
+    }
+    @include tablet {
+      gap: 20px;
+      font-size: 15px;
+    }
+
+    img {
+      display: block;
+      width: 180px;
+
+      @include laptop {
+        width: 140px;
+      }
+    }
+  }
+}

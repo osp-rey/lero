@@ -53,6 +53,14 @@
     left: 0;
     opacity: 0;
     z-index: -1;
+
+    &:checked + .wpcf7-list-item-label {
+      &::before {
+        background: url("@img/check-dark.svg") center / 15px auto no-repeat;
+        background-color: var(--background-a);
+        border: 1px solid var(--border-a);
+      }
+    }
   }
   .wpcf7-list-item {
     margin-left: 0 !important;
@@ -71,7 +79,7 @@
       text-decoration: underline;
       text-underline-offset: 2px;
 
-      transition: color .3s ease;
+      transition: color 0.3s ease;
       @include hover {
         text-decoration: none;
         color: var(--primary);
@@ -95,6 +103,67 @@
       transition:
         background-color 0.3s ease,
         border-color 0.3s ease;
+    }
+  }
+}
+
+.file-wrapper {
+  position: relative;
+
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .file-btn {
+    --border: rgba(0, 0, 0, 0.6);
+    --background: white;
+    --color: rgba(0, 0, 0, 0.6);
+    --border-h: var(--primary);
+    --background-h: white;
+    --color-h: black;
+
+    @include flex-between;
+    cursor: pointer;
+    user-select: none;
+    gap: 15px;
+    padding: 15px 40px;
+    border: 1px solid var(--border);
+    background-color: var(--background);
+
+    font-size: 13px;
+    color: var(--color);
+
+    transition:
+      color 0.3s ease,
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+
+    @include hover {
+      background-color: var(--background-h);
+      border-color: var(--border-h);
+      color: var(--color-h);
+    }
+    @include tablet {
+      padding: 14px 30px;
+    }
+
+    i {
+      font-size: 25px;
+      flex-shrink: 0;
+      @include tablet {
+        font-size: 20px;
+      }
+    }
+
+    .file-name {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }

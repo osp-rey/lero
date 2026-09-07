@@ -1,0 +1,71 @@
+.s-get__body {
+  background-color: white;
+  color: black;
+}
+
+.s-get__decor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.s-get__wrapper {
+  max-width: 1040px;
+}
+
+.s-get__title {
+  max-width: 740px;
+  margin-bottom: 20px;
+}
+
+.s-get__content {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.s-get__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.s-get__form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.s-get__form .form-control:nth-child(3) {
+  grid-column: 2 span;
+}
+
+.s-get__form .file-btn .file-name {
+  max-width: 210px;
+}
+
+@media (max-width: 1025px) {
+  .s-get__form .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .s-get__form {
+    gap: 15px;
+  }
+
+  .s-get__form .form-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .s-get__form .form-control {
+    grid-column: 2 span;
+  }
+
+  .s-get__form .btn-s[type=submit] {
+    width: 100%;
+  }
+}
