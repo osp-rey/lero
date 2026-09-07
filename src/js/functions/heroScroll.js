@@ -56,9 +56,9 @@ export default function heroScroll() {
       },
     });
 
-    // gsap.set(frameSecond, { opacity: 0 });
-    // gsap.set(content, { opacity: 0, x: -100 });
-    // gsap.set(btn, { opacity: 0, y: 50 });
+    gsap.set(frameSecond, { opacity: 0 });
+    gsap.set(content, { opacity: 0, x: -100 });
+    gsap.set(btn, { opacity: 0, y: 50 });
 
     gsap.to(frameSecond, {
       opacity: 1,

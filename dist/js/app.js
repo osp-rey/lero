@@ -53,7 +53,6 @@
             const burgerCloses = document.querySelectorAll("[data-burger-close]");
             const burgerOverlay = document.querySelector("#burger-overlay");
             const burgerAnchors = burger.querySelectorAll("a[href^='/#']");
-            console.log(burgerAnchors);
             burgerAnchors.forEach(anchor => {
                 anchor.addEventListener("click", () => {
                     handleClose();
@@ -206,6 +205,17 @@
                     end: "center center",
                     scrub: 1
                 }
+            });
+            gsap.set(frameSecond, {
+                opacity: 0
+            });
+            gsap.set(content, {
+                opacity: 0,
+                x: -100
+            });
+            gsap.set(btn, {
+                opacity: 0,
+                y: 50
             });
             gsap.to(frameSecond, {
                 opacity: 1,

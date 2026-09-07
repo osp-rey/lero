@@ -6,7 +6,7 @@ export default function burger() {
     const burgerCloses = document.querySelectorAll("[data-burger-close]");
     const burgerOverlay = document.querySelector("#burger-overlay");
     const burgerAnchors = burger.querySelectorAll("a[href^='/#']");
-    console.log(burgerAnchors)
+
     burgerAnchors.forEach((anchor) => {
       anchor.addEventListener("click", () => {
         handleClose();
