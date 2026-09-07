@@ -113,10 +113,14 @@
       }
     }
   }
+  &__frame-wrap-logo {
+    align-self: center;
+  }
   &__frame-logo {
     display: block;
-    align-self: center;
     width: 385px;
+    // animation: fadeRight 2s ease-in-out;
+
     @include laptop {
       width: 300px;
     }
@@ -220,5 +224,16 @@
     @include tablet-min {
       width: 100%;
     }
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -163,6 +163,20 @@
             const frameSecond = hero.querySelector("#hero-frame-second");
             const content = hero.querySelector(".s-hero__frame-content");
             const btn = hero.querySelector(".s-hero__frame-btn");
+            setTimeout(() => {
+                gsap.to(logo, {
+                    opacity: 1,
+                    ease: "power1.inOut",
+                    x: 0,
+                    duration: 1
+                });
+                gsap.to(text, {
+                    opacity: 1,
+                    ease: "power1.inOut",
+                    x: 0,
+                    duration: 1
+                });
+            }, 150);
             gsap.to(frameStart, {
                 opacity: 0,
                 ease: "power1.inOut",
@@ -223,8 +237,8 @@
                 scrollTrigger: {
                     trigger: hero,
                     start: "center center",
-                    end: "bottom bottom",
-                    scrub: 1
+                    end: "center center",
+                    scrub: 2
                 }
             });
             gsap.to(content, {
@@ -234,8 +248,8 @@
                 scrollTrigger: {
                     trigger: hero,
                     start: "center center",
-                    end: "bottom bottom",
-                    scrub: 1
+                    end: "center center",
+                    scrub: 2
                 }
             });
             gsap.to(btn, {
@@ -245,8 +259,8 @@
                 scrollTrigger: {
                     trigger: hero,
                     start: "center center",
-                    end: "bottom bottom",
-                    scrub: 1
+                    end: "center center",
+                    scrub: 2
                 }
             });
             return () => {
@@ -843,6 +857,7 @@
         spoller();
         map();
         anchors_anchors();
+        AOS.init();
         Fancybox.bind("[data-fancybox]", {
             closeButton: false,
             on: {

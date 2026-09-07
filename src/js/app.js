@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   map();
   anchors();
 
+  AOS.init()
   Fancybox.bind("[data-fancybox]", {
     closeButton: false,
     on: {

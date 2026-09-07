@@ -11,6 +11,30 @@ export default function heroScroll() {
     const frameSecond = hero.querySelector("#hero-frame-second");
     const content = hero.querySelector(".s-hero__frame-content");
     const btn = hero.querySelector(".s-hero__frame-btn");
+    // gsap.to(logo, {
+    //   opacity: 0,
+    //   x: -300,
+    //   duration: 0
+    // });
+    // gsap.to(text, {
+    //   opacity: 0,
+    //   x: 300,
+    //   duration: 0
+    // });
+    setTimeout(() => {
+      gsap.to(logo, {
+        opacity: 1,
+        ease: "power1.inOut",
+        x: 0,
+        duration: 1,
+      });
+      gsap.to(text, {
+        opacity: 1,
+        ease: "power1.inOut",
+        x: 0,
+        duration: 1,
+      });
+    }, 150);
 
     gsap.to(frameStart, {
       opacity: 0,
@@ -66,8 +90,8 @@ export default function heroScroll() {
       scrollTrigger: {
         trigger: hero,
         start: "center center",
-        end: "bottom bottom",
-        scrub: 1,
+        end: "center center",
+        scrub: 2,
       },
     });
 
@@ -78,8 +102,8 @@ export default function heroScroll() {
       scrollTrigger: {
         trigger: hero,
         start: "center center",
-        end: "bottom bottom",
-        scrub: 1,
+        end: "center center",
+        scrub: 2,
       },
     });
 
@@ -90,8 +114,8 @@ export default function heroScroll() {
       scrollTrigger: {
         trigger: hero,
         start: "center center",
-        end: "bottom bottom",
-        scrub: 1,
+        end: "center center",
+        scrub: 2,
       },
     });
 

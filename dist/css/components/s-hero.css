@@ -81,9 +81,12 @@
   background-color: currentColor;
 }
 
+.s-hero__frame-wrap-logo {
+  align-self: center;
+}
+
 .s-hero__frame-logo {
   display: block;
-  align-self: center;
   width: 385px;
 }
 
@@ -140,6 +143,18 @@
   width: 250px;
   max-width: 100%;
   flex-shrink: 0;
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 1365px) {
